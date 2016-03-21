@@ -17,6 +17,7 @@ port = int(port_no)
 Block_time = 60
 time_out = 30*60
 offline_msg = {}
+filename = argv
 #Function that checks if client is authorized or not
 def authorize (data1,data2):
 	flag = 0
@@ -177,7 +178,7 @@ def run_client(conn,cl_name,cl_add,p):
 		print "Logging off this client"
 
 #Opening text file with list of usernames and passwords		
-txt = open('/home/adarshmurthy/Desktop/user_pass.txt')
+txt = open(filename)
 
 
 s = txt.readlines()
