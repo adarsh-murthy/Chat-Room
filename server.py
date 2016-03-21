@@ -12,12 +12,11 @@ new_port = []
 Connected_user = {}
 conn_clients = {}
 Block_user = {}
-script, port_no = argv
+script, port_no, filename = argv
 port = int(port_no)
 Block_time = 60
 time_out = 30*60
 offline_msg = {}
-filename = argv
 #Function that checks if client is authorized or not
 def authorize (data1,data2):
 	flag = 0
